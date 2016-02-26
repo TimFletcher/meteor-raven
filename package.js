@@ -6,11 +6,11 @@ Package.describe({
 });
 
 Npm.depends({
-  'raven': '0.7.2'
+  'raven': '0.10.0'
 });
 
 Package.onUse(function (api, where) {
-  api.versionsFrom('METEOR@0.9.0');
+  api.versionsFrom('METEOR@1.2.1');
   api.addFiles('lib/main.js', [ 'client', 'server' ]);
   api.addFiles('vendor/raven.js', 'client');
 
